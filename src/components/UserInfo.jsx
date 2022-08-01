@@ -17,6 +17,10 @@ const Item = styled(Paper)(({ theme = darkTheme}) => ({
 
 
 const UserInfo = () => {
+
+    const name = 'Lorelai Gilmore';
+    const email = 'lorelaigilmore25@gmail.com';
+
     return (
         <ThemeProvider theme= {darkTheme}>
 
@@ -32,14 +36,14 @@ const UserInfo = () => {
                             fontSize: '0.9rem',
                             fontWeight: '500',
             
-                        }}> Lorelai Gilmore   </Typography>
+                        }}> {name}  </Typography>
                         <Typography sx={{
                             fontFamily: "Montserrat",
                             fontSize: '0.8rem',
                             fontWeight: '500',
                             color: 'text.secondary',
                           
-                        }}>lorelaigilmore25@gmail.com</Typography>
+                        }}> {email}</Typography>
 
                     </Stack>
                 </Box>

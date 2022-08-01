@@ -3,6 +3,7 @@ import { Container,Stack,Paper, styled ,ThemeProvider} from '@mui/material'
 
 import UserInfo from './UserInfo';
 import Steps from './Steps';
+import Work from './Work';
 
 import { darkTheme } from './Header';
 
@@ -24,7 +25,7 @@ const UserRow = () => {
       <Stack direction="row" spacing={10}>
         <UserInfo/>
         <Steps/>
-        <Item>Item 1</Item>
+        <Work/>
         <Item>Item 2</Item>
         <Item>Item 3</Item>
       </Stack>
