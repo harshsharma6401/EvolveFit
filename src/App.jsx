@@ -19,8 +19,8 @@ function App() {
       <Header/> 
       <Routes>
         <Route path = '/' element = {<HomePage/>}  exact/>
-        <Route path = '/user/:userId/workout' element = {<Workout/>} exact/> 
-        <Route path = '/user/:userId/nutrition' element = {<Nutrition/>} exact/> 
+        <Route path = '/workout/:userId' element = {<Workout/>} exact/> 
+        <Route path = '/nutrition/:userId' element = {<Nutrition/>} exact/> 
        
       </Routes>
 

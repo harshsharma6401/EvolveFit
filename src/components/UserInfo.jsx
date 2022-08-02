@@ -16,10 +16,10 @@ const Item = styled(Paper)(({ theme = darkTheme}) => ({
 
 
 
-const UserInfo = () => {
+const UserInfo = ({name,email}) => {
 
-    const name = 'Lorelai Gilmore';
-    const email = 'lorelaigilmore25@gmail.com';
+    // const name = 'Lorelai Gilmore';
+    // const email = 'lorelaigilmore25@gmail.com';
 
     return (
         <ThemeProvider theme= {darkTheme}>

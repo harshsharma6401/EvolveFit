@@ -1,0 +1,22 @@
+.minimal-piechart >svg {
+    display:block; 
+    position:absolute;
+    left:700px;
+    overflow: hidden;
+    width:30% !important ;
+  
+     /* width:fit-content; */
+   
+  }
+  .pie-label-1{
+    display:block; 
+    position:absolute;
+    left:856px;
+  
+  }
+  .pie-label-2{
+    display: block;
+    position:absolute;
+    left:853px;
+    /* bottom:80px; */
+  }
