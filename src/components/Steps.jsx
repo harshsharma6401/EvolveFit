@@ -7,9 +7,10 @@ import { darkTheme } from './Header';
 import Target from './Target';
 
 const Steps = ({Steps,stepTarget}) => {
+   
     const steps = Number(Steps);
     const target = Number(stepTarget);
-    
+
     return (
         <ThemeProvider theme={darkTheme}>
             <Stack direction="row" spacing={3} alignItems="center">
@@ -25,7 +26,7 @@ const Steps = ({Steps,stepTarget}) => {
                     </CircularProgressbarWithChildren>
                 </div>
 
-                <Target target = {target} isSteps = {true}/>
+                <Target target = {target} isSteps = {true} />
             </Stack>
 
         </ThemeProvider >

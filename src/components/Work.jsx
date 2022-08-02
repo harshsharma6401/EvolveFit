@@ -58,13 +58,13 @@ const Work = ({performedDate,scheduledDate,userId,feedback}) => {
        <Stack  direction="row"   >
        <Stack spacing={2} alignItems="center" justifyContent ="center" sx ={{py:1,}} >
 
-        <Stack direction="row"  sx ={{mt:0.5}} alignItems="center" >
+        <Stack className = "dateStack" direction="row"  sx ={{  mt:0.5}} alignItems="center" >
       
         <img src= {userCheck} alt="userCheck" width ='22px' height='20px'/> 
         <Typography sx={{px:1,fontFamily:'Montserrat',fontWeight:600}}>{ PerformedDate}</Typography>
         </Stack>
         
-        <Stack direction="row" alignItems="center" style = { isScheduled? styles.alertStyle : styles.normal} >
+        <Stack className = "dateStack" direction="row" alignItems="center" style = { isScheduled? styles.alertStyle : styles.normal} >
        
           {/* If scheduled date is current date ,add sx prop to this stack */}
           {/* sx ={{bgcolor:'#CC3838',borderRadius:2,px:1,py:1}} */}

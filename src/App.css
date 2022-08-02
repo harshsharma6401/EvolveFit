@@ -10,25 +10,32 @@ a{
   text-decoration:none;
   color:gold;
 }
-.minimal-piechart > svg {
-  display:block; 
-  position:absolute;
-  left:700px;
-  overflow: hidden;
-  width:30% !important ;
 
-   /* width:fit-content; */
- 
+.minimal-piechart {
+  margin:0;
+  width:30%;
+
 }
+
+/* .labels{
+  display:flex;
+  flex-direction: column;
+} */
+
 .pie-label-1{
   display:block; 
   position:absolute;
-  left:856px;
+  left:800px;
 
 }
 .pie-label-2{
-  display: block;
+  /* display: block;
   position:absolute;
-  left:853px;
+  left:815px; */
   /* bottom:80px; */
+}
+.dateStack
+{
+  width:max-content;
+  font-size:14px;
 }

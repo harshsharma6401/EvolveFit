@@ -4,18 +4,21 @@ import React from 'react'
 import { darkTheme } from './Header'
 import { useState } from 'react'
 
-const Target = ({ target, isSteps }) => {
+const Target = ({ target, isSteps, handleSteps }) => {
 
     const [steps, setSteps] = useState(target);
 
+    const handleChange  = ({target}) =>{
+        isSteps? setSteps(steps+500) : setSteps(steps+100) 
+    }
 
     return (
         <ThemeProvider theme={darkTheme} >  <Stack spacing={0} alignItems="center" >
 
 
-            <Button onClick={()=> {isSteps?setSteps(steps+500):setSteps(steps+100) }}
+            <Button onClick={ handleChange}
                 size="small"
-                sx={{ color: 'text.primary', fontWeight: '900', textAlign: 'center', bgcolor: '#101317', minWidth: 9 / 10, py: 0 }} >+</Button>
+                sx={{ color: 'text.primary', fontWeight: '900', textAlign: 'center', bgcolor: '#101317', py: 0 }} >+</Button>
 
             <Typography sx={{ textAlign: 'center', fontWeight: 700, fontSize: '16px', mt: 1 / 2 }}>
                 {steps / 1000}K
@@ -25,9 +28,9 @@ const Target = ({ target, isSteps }) => {
             </Typography>
 
 
-            <Button onClick={()=> {isSteps?setSteps(steps-500):setSteps(steps-100) }}
+            <Button onClick={handleChange}
             size="small" 
-            sx={{ color: 'text.primary', fontWeight: '900', textAlign: 'center', bgcolor: '#101317', minWidth: 9 / 10, py: 0 }} >-</Button>
+            sx={{ color: 'text.primary', fontWeight: '900', textAlign: 'center', bgcolor: '#101317', py: 0 }} >-</Button>
 
 
         </Stack>
