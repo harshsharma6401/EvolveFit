@@ -16,14 +16,26 @@ const UserRow = ({User}) => {
   const c = Number(User.carbConsumed);
   const f  = Number(User.fatConsumed);
 
+  const pt = Number(User.proteinTarget);
+  const ct = Number(User.carbTarget);
+  const ft  = Number(User.fatTarget);
+
   const dataEntry = [
 
     { title: 'Protien', value: p, color: '#F45C84' },
     { title: 'Carbs', value: c, color: '#F5C90F' },
     { title: 'Fats', value: f, color: '#03C7FC' },
     
-   
-];
+ ];
+
+      const nutrientData = [
+
+            { title: 'Protien', value: p,  maxValue: pt },
+            { title: 'Fats', value: f,  maxValue: ft },
+            { title: 'Carbs', value: c,  maxValue: ct },
+        
+      ];
+
     console.log(typeof(p));
    const totalNutri  = (p +  c + f);
 
@@ -38,7 +50,7 @@ const UserRow = ({User}) => {
         <UserInfo name = {User.name} email = {User.email}/>
         <Steps Steps ={User.stepsWalked} stepTarget ={User.stepsTarget}/>
         <Work performedDate ={User.performedDate} scheduledDate = {User.scheduledDate} userId ={User.userId} feedback ={User.feedback}/>
-        <Nutri userId ={User.userId} calorieTarget ={User.calorieTarget} calorieIntake ={User.calorieIntake} dataEntry ={dataEntry} totalNutri ={totalNutri} />
+        <Nutri userId ={User.userId} calorieTarget ={User.calorieTarget} calorieIntake ={User.calorieIntake} dataEntry ={dataEntry} totalNutri ={totalNutri} nutrientData = {nutrientData} />
         <Notification />
       </Stack>
       </Paper>

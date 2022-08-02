@@ -8,10 +8,9 @@ import  '../App.css'
 import Piechart from './PieChart';
 import { useNavigate } from 'react-router-dom';
 
-const Nutri = ({calorieTarget,calorieIntake,dataEntry , totalNutri,userId}) => {
+const Nutri = ({calorieTarget,calorieIntake,dataEntry , totalNutri, nutrientData,userId}) => {
 
     const target = Number(calorieTarget);    
-    const [show, setShow] = useState(false);
     console.log(dataEntry,totalNutri);
 
     const navigate = useNavigate();
@@ -19,12 +18,8 @@ const Nutri = ({calorieTarget,calorieIntake,dataEntry , totalNutri,userId}) => {
     return (
         <ThemeProvider theme={darkTheme}>
            <Stack className ="minimal-piechart" direction="row" spacing={3} alignItems="center" style={{marginLeft:40}}>  {/*sx= {{pl:15}} */}
-            
-          
               
-            <Piechart dataEntry ={dataEntry} totalNutri ={totalNutri} />
-            
-            
+            <Piechart dataEntry ={dataEntry} totalNutri ={totalNutri} nutrientData = {nutrientData} />
 
             <Stack  className ="pie-label-stack" > 
             <Typography  sx={{  fontFamily:'Montserrat',fontWeight:600}} >{calorieIntake} </Typography>
