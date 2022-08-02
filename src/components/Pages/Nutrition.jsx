@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from "react-router-dom";
-
+import { Typography,Container,ThemeProvider } from '@mui/material';
+import { darkTheme } from '../Header';
 
 const Nutrition = () => {
 
@@ -8,7 +9,12 @@ const Nutrition = () => {
 
 
   return (
-    <div>Nutrition of {userId} </div>
+    <ThemeProvider theme ={darkTheme}>
+      <Container style={{marginTop:100}}>
+      <Typography>Nutrition of {userId} </Typography>
+      </Container>
+      </ThemeProvider>
+     
     
   )
 }

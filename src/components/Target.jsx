@@ -4,19 +4,19 @@ import React from 'react'
 import { darkTheme } from './Header'
 import { useState } from 'react'
 
-const Target = ({ target, isSteps}) => {
+const Target = ({ target, isSteps }) => {
 
     const [steps, setSteps] = useState(target);
 
-    const handleChange  = ({target}) =>{
-        isSteps? setSteps(steps+500) : setSteps(steps+100) 
+    const handleChange = () => {
+        isSteps ? setSteps(steps + 500) : setSteps(steps + 100)
     }
 
     return (
         <ThemeProvider theme={darkTheme} >  <Stack spacing={0} alignItems="center" >
 
 
-            <Button onClick={ handleChange}
+            <Button onClick={handleChange}
                 size="small"
                 sx={{ color: 'text.primary', fontWeight: '900', textAlign: 'center', bgcolor: '#101317', py: 0 }} >+</Button>
 
@@ -29,8 +29,8 @@ const Target = ({ target, isSteps}) => {
 
 
             <Button onClick={handleChange}
-            size="small" 
-            sx={{ color: 'text.primary', fontWeight: '900', textAlign: 'center', bgcolor: '#101317', py: 0 }} >-</Button>
+                size="small"
+                sx={{ color: 'text.primary', fontWeight: '900', textAlign: 'center', bgcolor: '#101317', py: 0 }} >-</Button>
 
 
         </Stack>
