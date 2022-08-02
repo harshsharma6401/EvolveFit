@@ -11,8 +11,6 @@ const Piechart = ({dataEntry , totalNutri}) => {
   return (
     <ThemeProvider theme ={darkTheme}>
         <div className ='minimal-piechart' >
-        
-     
 
         <PieChart  lineWidth={20} totalValue={totalNutri} radius= {PieChart.defaultProps.radius - 6}
                     data={dataEntry}
@@ -25,7 +23,7 @@ const Piechart = ({dataEntry , totalNutri}) => {
                         }}
             /> 
 
-               <Typography  className ="pie-label-2" style ={{fontSize : '8px', marginTop:-20 }}  >Calories</Typography>
+           
              {/* sx={{  py: 10,px:1,fontSize : 8,color: '#BDBCBE',fontFamily:'Montserrat'}} */}
             </div>
           

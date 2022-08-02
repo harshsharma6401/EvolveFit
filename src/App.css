@@ -17,23 +17,14 @@ a{
 
 }
 
-/* .labels{
-  display:flex;
-  flex-direction: column;
-} */
 
-.pie-label-1{
+.pie-label-stack{
   display:block; 
   position:absolute;
-  left:800px;
+  left:810px;
 
 }
-.pie-label-2{
-  /* display: block;
-  position:absolute;
-  left:815px; */
-  /* bottom:80px; */
-}
+
 .dateStack
 {
   width:max-content;
