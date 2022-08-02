@@ -1,8 +1,9 @@
 import React from 'react'
 import { PieChart } from 'react-minimal-pie-chart';
-import { ThemeProvider, Typography} from '@mui/material'
+import { ThemeProvider, Typography,Tooltip} from '@mui/material'
 import { darkTheme } from './Header';
 import '.././App.css';
+import Macros from './Macros';
 
 const Piechart = ({dataEntry , totalNutri}) => {
 
@@ -10,8 +11,9 @@ const Piechart = ({dataEntry , totalNutri}) => {
 
   return (
     <ThemeProvider theme ={darkTheme}>
+    
+        <Tooltip title = {<Macros ></Macros>} >
         <div className ='minimal-piechart' >
-
         <PieChart  lineWidth={20} totalValue={totalNutri} radius= {PieChart.defaultProps.radius - 6}
                     data={dataEntry}
                     segmentsStyle={{ transition: 'stroke .3s', cursor: 'pointer' }}
@@ -23,10 +25,9 @@ const Piechart = ({dataEntry , totalNutri}) => {
                         }}
             /> 
 
-           
-             {/* sx={{  py: 10,px:1,fontSize : 8,color: '#BDBCBE',fontFamily:'Montserrat'}} */}
-            </div>
           
+            </div>
+            </Tooltip>
     </ThemeProvider>
   )
 }

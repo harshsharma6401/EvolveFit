@@ -1,8 +1,13 @@
 import React from 'react'
 
+import { useParams } from "react-router-dom";
+
 const Workout = () => {
+
+  const { userId} = useParams();
+
   return (
-    <div>workout</div>
+    <div>Workout of {userId} </div>
   )
 }
 

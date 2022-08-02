@@ -1,8 +1,9 @@
 import React from 'react'
-import { ThemeProvider } from '@mui/material'
+import { Container, ThemeProvider } from '@mui/material'
 import UserRow from '../UserRow'
 import { darkTheme } from '../Header'
 import Users from '../../users.json'
+import Macros from '../Macros'
 
 const HomePage = () => {
 
@@ -14,7 +15,9 @@ const HomePage = () => {
 
   return (
     <ThemeProvider theme ={darkTheme}>
+      <Container style={{marginTop:100}}>
       {UserRows}
+      </Container>
       </ThemeProvider>
   )
 }

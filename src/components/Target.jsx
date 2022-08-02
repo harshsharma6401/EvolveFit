@@ -4,7 +4,7 @@ import React from 'react'
 import { darkTheme } from './Header'
 import { useState } from 'react'
 
-const Target = ({ target, isSteps, handleSteps }) => {
+const Target = ({ target, isSteps}) => {
 
     const [steps, setSteps] = useState(target);
 
