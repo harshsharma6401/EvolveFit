@@ -42,9 +42,9 @@ const UserRow = ({ User }) => {
         <Paper sx={{ py: 1, px: 3, borderRadius: 3 }}>
           <Stack direction="row" spacing={10}>
             <UserInfo name={User.name} email={User.email} />
-            <Steps Steps={User.stepsWalked} stepTarget={User.stepsTarget} />
+            <Steps Steps={User.stepsWalked} target={User.stepsTarget} />
             <Work performedDate={User.performedDate} scheduledDate={User.scheduledDate} userId={User.userId} feedback={User.feedback} />
-            <Nutri userId={User.userId} calorieTarget={User.calorieTarget} calorieIntake={User.calorieIntake} dataEntry={dataEntry} totalNutri={totalNutri} nutrientData={nutrientData} />
+            <Nutri userId={User.userId} target={User.calorieTarget} calorieIntake={User.calorieIntake} dataEntry={dataEntry} totalNutri={totalNutri} nutrientData={nutrientData} />
             <Notification />
           </Stack>
         </Paper>
