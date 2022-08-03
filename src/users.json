@@ -71,5 +71,62 @@
         "fatTarget": "40",
         "feedback":false
     }
+    ,
+    {
+        "userId": "FJ5DB3GH3KS84MQ2",
+        "name": "Amy Santiago",
+        "email": "amySantiago99@gmail.com",
+        "stepsWalked": "8000",
+        "stepsTarget": "12000",
+        "performedDate": "3/08/2022",
+        "scheduledDate": "3/08/2022",
+        "calorieIntake": "900",
+        "calorieTarget": "1400",
+        "proteinConsumed": "35",
+        "proteinTarget": "65",
+        "carbConsumed": "90",
+        "carbTarget": "150",
+        "fatConsumed": "15",
+        "fatTarget": "35",
+        "feedback":true
+    }
+    ,
+    {
+        "userId": "K4HSN5MAD92KZ6R6",
+        "name": "Max Black",
+        "email": "maxblackthebaker@gmail.com",
+        "stepsWalked": "10000",
+        "stepsTarget": "15000",
+        "performedDate": "4/08/2022",
+        "scheduledDate": "4/08/2022",
+        "calorieIntake": "1000",
+        "calorieTarget": "1700",
+        "proteinConsumed": "45",
+        "proteinTarget": "70",
+        "carbConsumed": "100",
+        "carbTarget": "200",
+        "fatConsumed": "27",
+        "fatTarget": "50",
+        "feedback":true
+    }
+    ,
+    {
+        "userId": "J4D93KSHRN2K3O9S",
+        "name": "Stefan Salvatore",
+        "email": "stefansalvatoretvd@gmail.com",
+        "stepsWalked": "15000",
+        "stepsTarget": "20000",
+        "performedDate": "5/08/2022",
+        "scheduledDate": "5/08/2022",
+        "calorieIntake": "800",
+        "calorieTarget": "1200",
+        "proteinConsumed": "45",
+        "proteinTarget": "60",
+        "carbConsumed": "90",
+        "carbTarget": "120",
+        "fatConsumed": "17",
+        "fatTarget": "35",
+        "feedback":false
+    }
 ]
 
