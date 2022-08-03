@@ -1,7 +1,7 @@
 import React from 'react'
 import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import { ThemeProvider, Stack, Paper, Typography, Button } from '@mui/material'
+import { ThemeProvider, Stack } from '@mui/material'
 import { useState } from 'react';
 import { darkTheme } from './Header';
 import Target from './Target';
