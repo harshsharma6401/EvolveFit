@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './components/Pages/HomePage';
 import Header from './components/Header';
 import Workout from './components/Pages/Workout';
+import Nutrition from './components/Pages/Nutrition';
 
 function App() {
 
