@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Stack, styled, Paper, Typography, ThemeProvider } from '@mui/material';
+import { Box, Stack, Typography, ThemeProvider } from '@mui/material';
 import profileImage from '../assets/profileImage.png';
 import { darkTheme } from './Header';
 

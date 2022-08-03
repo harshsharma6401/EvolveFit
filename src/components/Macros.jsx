@@ -1,6 +1,6 @@
 import React from 'react'
 import { darkTheme } from './Header'
-import { ThemeProvider, LinearProgress, Paper, Tooltip, Typography, Box } from '@mui/material'
+import { ThemeProvider, LinearProgress, Paper,Typography, Box } from '@mui/material'
 
 const Macros = ({ nutrientData }) => {
 

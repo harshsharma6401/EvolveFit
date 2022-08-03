@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Stack, Paper, styled, ThemeProvider } from '@mui/material'
+import { Container, Stack, Paper, ThemeProvider } from '@mui/material'
 import UserInfo from './UserInfo';
 import Steps from './Steps';
 import Work from './Work';

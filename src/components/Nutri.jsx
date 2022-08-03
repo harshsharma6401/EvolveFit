@@ -1,12 +1,12 @@
 import React from 'react'
-import { ThemeProvider, Stack, Typography, Button, Box, Grid, Tooltip } from '@mui/material'
+import { ThemeProvider, Stack, Typography, Button, Box} from '@mui/material'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { darkTheme } from './Header';
 import Target from './Target';
-import '../App.css'
-import Piechart from './PieChart';
+import Piechart from './Piechart';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import '../App.css'
 
 const Nutri = ({ target, calorieIntake, dataEntry, totalNutri, nutrientData, userId }) => {
 

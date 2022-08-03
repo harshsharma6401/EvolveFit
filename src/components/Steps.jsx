@@ -1,5 +1,5 @@
 import React from 'react'
-import { CircularProgressbar, CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
+import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { ThemeProvider, Stack, Paper, Typography, Button } from '@mui/material'
 import { useState } from 'react';
